@@ -1,2 +1,2 @@
 # wavyR
-fuck surfline
+i present an ad-free solution which allows you to retrieve a daily surf report & surf forecast right in your terminal. this is not a flashy solution. i intend to build a more attractive front end for this, but the current state is kinda perfect for use at work if you need to be discrete. i want to update this eventually so please save a copy on your machine if you enjoy these text-only/terminal-based functions. 
