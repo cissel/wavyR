@@ -1,2 +1,7 @@
 # wavyR
-i present an ad-free solution which allows you to retrieve a daily surf report & surf forecast right in your terminal. this is not a flashy solution. i intend to build a more attractive front end for this, but the current state is kinda perfect for use at work if you need to be discrete. i want to update this eventually so please save a copy on your machine if you enjoy these text-only/terminal-based functions. 
+
+An open source solution to surf forecasting. Includes functions to return a text surf report and a text surf forecast. 
+
+Also includes a function to return surf forecasts as a dataframe so you can plot them with your own styles and themes. I also included a function that returns an interactive plot, shown below.
+
+![surfPlot](https://github.com/cissel/wavyR/assets/101683174/fa283e86-d27e-45d4-bcd3-d3637b8e2aa2)
