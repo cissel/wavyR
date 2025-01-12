@@ -2,9 +2,11 @@
 
 ##### Required Packages #####
 
-require(tidyverse)
-require(rvest)
-require(plotly)
+library(tidyverse)
+library(rvest)
+library(httr)
+library(plotly)
+library(magick)
 
 #####
 
@@ -335,3 +337,38 @@ plotSurfFcst <- function() {
 
 #####
 
+##### Jacksonville Radar #####
+
+plotjaxradar <- function() {
+  
+  kjaxUrl <- "https://radar.weather.gov/ridge/standard/KJAX_loop.gif"
+  
+  kjaxOut <- "~/Downloads/nwsJaxRadar.gif"
+  
+  download.file(kjaxUrl, kjaxOut, mode = "wb")
+  
+  kjax <- image_read(kjaxOut)
+  
+  print(kjax)
+  
+}
+
+#####
+
+##### Florida Radar #####
+
+plotFLradar <- function() {
+  
+  flaUrl <- "https://radar.weather.gov/ridge/standard/SOUTHEAST_loop.gif"
+  
+  flaOut <- "~/Downloads/nwsFlaRadar.gif"
+  
+  download.file(flaUrl, flaOut, mode = "wb")
+  
+  fla <- image_read(flaOut)
+  
+  print(fla)
+  
+}
+
+#####
